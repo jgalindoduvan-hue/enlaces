@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .proyecto {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .titulo {
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .descripcion {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #005ea6;
+    }
+
+    button[disabled] {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <h1>Proyectos</h1>
+
+  <div class="contenedor">
+
+    <div class="proyecto">
+      <div class="info">
+        <div class="titulo">Torneo 1vs1</div>
+        <div class="descripcion">Página del torneo competitivo 1vs1.</div>
+      </div>
+      <button onclick="window.open('https://jgalindoduvan-hue.github.io/TORNEOS-1VS1/', '_blank')">Abrir</button>
+    </div>
+
+    <div class="proyecto">
+      <div class="info">
+        <div class="titulo">Ruleta Mili</div>
+        <div class="descripcion">Ruleta para sorteo al azar de pases.</div>
+      </div>
+      <button onclick="window.open('https://jgalindoduvan-hue.github.io/ruleta-mili/', '_blank')">Abrir</button>
+    </div>
+
+    <div class="proyecto">
+      <div class="info">
+        <div class="titulo">Página de Mili</div>
+        <div class="descripcion">Página de Mili (aún en proceso).</div>
+      </div>
+      <button onclick="window.open('https://jgalindoduvan-hue.github.io/PAGINA/', '_blank')">Abrir</button>
+    </div>
+
+    <div class="proyecto">
+      <div class="info">
+        <div class="titulo">Valentina - Código Tampermonkey</div>
+        <div class="descripcion">Proyecto pendiente, enlace próximamente.</div>
+      </div>
+      <button disabled>Próximamente</button>
+    </div>
+
+  </div>
+</body>
+</html>
